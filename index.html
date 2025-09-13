@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+    <!-- título -->
     <h1>JOGO DA VELHA</h1>
 
+    <!-- o tabuleiro é formado por uma div contendo 9 divs filhas -->
     <div id="tabuleiro" class="tabuleiro">
         <div class="casa" data-posicao="1"></div>
         <div class="casa" data-posicao="2"></div>
@@ -21,8 +23,10 @@
         <div class="casa" data-posicao="9"></div>
     </div>
 
-    <div id="jogador-da-vez"><b>Jogador X, é sua vez!</b></div>
+    <!-- mensagem que indica a vez do jogador, vitória ou empate -->
+    <div id="mensagem-status"><b>Jogador 1, é a sua vez!</b></div>
 
+    <!-- botão pra reiniciar o jogo -->
     <button id="reiniciarButton">
         Reiniciar partida
     </button>
