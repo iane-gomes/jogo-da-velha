@@ -1,0 +1,62 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 205, 189);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1 {
+    color: rgb(139, 29, 13);
+    font-family: 'Cooper Black', sans-serif;
+    margin-bottom: 30px;
+    font-size: 2.8rem;
+}
+
+.tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 1px;
+    margin-bottom: 30px;
+}
+
+.casa {
+    width: 100px;
+    height: 100px;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+}
+
+#jogador-da-vez {
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', 'Candara', Verdana, sans-serif;
+    font-size: 1.5rem;
+}
+
+#reiniciarButton {
+    background-color: white;
+    border: 2px solid rgb(71, 14, 5);
+    color: rgb(71, 14, 5);
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    font: Candara;
+}
+
+#restartgame-button:hover {
+    background-color: rgb(241, 106, 86); /* Fundo da cor do título */
+    color: #fff; /* Letra branca */
+}

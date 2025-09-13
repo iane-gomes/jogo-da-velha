@@ -4,15 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <main>
-        <h1>JOGO DA VELHA</h1>
+    <h1>JOGO DA VELHA</h1>
 
+    <div id="tabuleiro" class="tabuleiro">
+        <div class="casa" data-posicao="1"></div>
+        <div class="casa" data-posicao="2"></div>
+        <div class="casa" data-posicao="3"></div>
+        <div class="casa" data-posicao="4"></div>
+        <div class="casa" data-posicao="5"></div>
+        <div class="casa" data-posicao="6"></div>
+        <div class="casa" data-posicao="7"></div>
+        <div class="casa" data-posicao="8"></div>
+        <div class="casa" data-posicao="9"></div>
+    </div>
 
+    <div id="jogador-da-vez"><b>Jogador X, é sua vez!</b></div>
 
+    <button id="reiniciarButton">
+        Reiniciar partida
+    </button>
 
-    </main>
-
+    <script src="jogo.js"></script>
 </body>
 </html>
